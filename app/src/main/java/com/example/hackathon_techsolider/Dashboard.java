@@ -3,6 +3,7 @@ package com.example.hackathon_techsolider;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.RadioButton;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -56,6 +57,28 @@ public class Dashboard extends AppCompatActivity {
             case R.id.radio_4:
                 if (checked)
                     break;
+        }
+    }
+
+    public void onCheckboxClicked(View view) {
+        // Is the view now checked?
+        boolean checked = ((CheckBox) view).isChecked();
+
+        // Check which checkbox was clicked
+        switch(view.getId()) {
+            case R.id.check1:
+                if (checked)
+                    break;
+            case R.id.check2:
+                if (checked)
+                    break;
+            case R.id.check3:
+                if (checked)
+                    break;
+            case R.id.check4:
+                if (checked)
+                    break;
+            // TODO: Veggie sandwich
         }
     }
 }
